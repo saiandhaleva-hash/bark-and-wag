@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom playful paw bounce animation utility */
+@keyframes tailWag {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-14deg); }
+  75% { transform: rotate(14deg); }
+}
+
+.animate-wag {
+  animation: tailWag 0.9s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Paw print trail pulse */
+@keyframes pawFloat {
+  0% { transform: translateY(0px) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-8px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0px) scale(1); opacity: 0.8; }
+}
+
+.animate-paw-float {
+  animation: pawFloat 3s ease-in-out infinite;
+}

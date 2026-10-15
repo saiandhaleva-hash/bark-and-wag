@@ -1,0 +1,6 @@
+{
+  "name": "Bark & Wag Chronicles",
+  "description": "Dog care, canine nutrition, and puppy training blog written by dogs and canine experts. Features 10 long-form illustrated articles with playful paw navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
